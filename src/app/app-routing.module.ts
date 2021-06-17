@@ -4,6 +4,7 @@ import { DefaultComponent } from './layouts/default/default.component';
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
 import { PostsComponent } from './modules/posts/posts.component';
 import { SegmentsComponent } from './modules/segments/segments.component';
+import { WorkflowComponent } from './modules/workflow/workflow.component';
 
 const routes: Routes = [{
   path: '',
@@ -17,6 +18,9 @@ const routes: Routes = [{
   }, {
     path: 'segments',
     component: SegmentsComponent
+  }, {
+    path: 'workflow',
+    component: WorkflowComponent
   }]
 }];
 

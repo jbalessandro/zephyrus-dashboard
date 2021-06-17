@@ -11,14 +11,17 @@ import { SegmentsComponent } from 'src/app/modules/segments/segments.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatTableModule } from '@angular/material/table';
 import {MatPaginator} from '@angular/material/paginator';
-
+import { WorkflowComponent } from 'src/app/modules/workflow/workflow.component';
+import { MatIconModule } from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
     DefaultComponent,
     DashboardComponent,
     PostsComponent,
-    SegmentsComponent
+    SegmentsComponent,
+    WorkflowComponent
   ],
   imports: [
     CommonModule,
@@ -27,7 +30,9 @@ import {MatPaginator} from '@angular/material/paginator';
     MatSidenavModule,
     MatDividerModule,
     MatCardModule,
-    MatTableModule
+    MatTableModule,
+    MatIconModule,
+    MatButtonModule
   ]
 })
 export class DefaultModule { }

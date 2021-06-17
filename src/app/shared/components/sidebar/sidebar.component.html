@@ -1,22 +1,15 @@
 <mat-nav-list>
-    <!-- <div class="profile-card">
-        <div class="header">
-            <h2>Zephirus</h2>
-            <h4>contact@zephirus.com</h4>
-        </div>
-        <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="">
-    </div>
-
-    <mat-divider></mat-divider> -->
-
     <h2 matSubheader>Main</h2>
     <a mat-list-item routerLinkActive="list-item-active" routerLink="/">
-        <mat-icon>dashboard</mat-icon>Dashboard</a>
+        <mat-icon>dashboard</mat-icon>Dashboard
+    </a>
     <a mat-list-item routerLinkActive="list-item-active" routerLink="/posts">
-        <mat-icon>trending_up</mat-icon>Analytics</a>
-        <a mat-list-item routerLinkActive="list-item-active" routerLink="/posts">
-            <mat-icon>person</mat-icon>Profiles</a>
-    
+        <mat-icon>trending_up</mat-icon>Analytics
+    </a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/posts">
+        <mat-icon>person</mat-icon>Profiles
+    </a>
+
     <mat-divider></mat-divider>
 
     <h2 matSubheader>Actions</h2>
@@ -24,6 +17,7 @@
         <mat-icon>social_distance</mat-icon>
         Segments
     </a>
+
     <!-- templates -->
     <mat-accordion>
         <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
@@ -53,7 +47,7 @@
                     Workflows
                 </mat-panel-title>
             </mat-expansion-panel-header>
-            <a mat-list-item routerLinkActive="list-item-active" routerLink="/">
+            <a mat-list-item routerLinkActive="list-item-active" routerLink="/workflow">
                 <mat-icon>add</mat-icon>
                 Create new
             </a>
