@@ -1,5 +1,5 @@
 <mat-nav-list>
-    <div class="profile-card">
+    <!-- <div class="profile-card">
         <div class="header">
             <h2>Zephirus</h2>
             <h4>contact@zephirus.com</h4>
@@ -7,25 +7,78 @@
         <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="">
     </div>
 
-    <mat-divider></mat-divider>
+    <mat-divider></mat-divider> -->
 
-    <h2 matSubheader>Pages</h2>
-
-    <a mat-list-item routerLinkActive="list-item-active" routerLink="/">Dashboard</a>
-    <a mat-list-item routerLinkActive="list-item-active" routerLink="/posts">Posts</a>
-    <a mat-list-item routerLinkActive="list-item-active" routerLink="/articles">Articles</a>
+    <h2 matSubheader>Main</h2>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/">
+        <mat-icon>dashboard</mat-icon>Dashboard</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/posts">
+        <mat-icon>trending_up</mat-icon>Analytics</a>
+        <a mat-list-item routerLinkActive="list-item-active" routerLink="/posts">
+            <mat-icon>person</mat-icon>Profiles</a>
     
     <mat-divider></mat-divider>
-    
-    <h2 matSubheader>Tools</h2>
-    <a mat-list-item routerLinkActive="list-item-active" routerLink="/">
-        <mat-icon>import_contacts</mat-icon>
-        Contacts
-    </a>
-    <a mat-list-item routerLinkActive="list-item-active" routerLink="/">
-        <mat-icon>contact_phone</mat-icon>
-        Leads
-    </a>
 
+    <h2 matSubheader>Actions</h2>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/segments">
+        <mat-icon>social_distance</mat-icon>
+        Segments
+    </a>
+    <!-- templates -->
+    <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    <mat-icon>content_copy</mat-icon>
+                    Templates
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <a mat-list-item routerLinkActive="list-item-active" routerLink="/">
+                <mat-icon>article</mat-icon>
+                Your templates
+            </a>
+            <a mat-list-item routerLinkActive="list-item-active" routerLink="/">
+                <mat-icon>new_releases</mat-icon>
+                Find one
+            </a>
+        </mat-expansion-panel>
+    </mat-accordion>
+
+    <!-- workflows -->
+    <mat-accordion>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    <mat-icon>account_tree</mat-icon>
+                    Workflows
+                </mat-panel-title>
+            </mat-expansion-panel-header>
+            <a mat-list-item routerLinkActive="list-item-active" routerLink="/">
+                <mat-icon>add</mat-icon>
+                Create new
+            </a>
+            <a mat-list-item routerLinkActive="list-item-active" routerLink="/">
+                <mat-icon>edit</mat-icon>
+                Edit
+            </a>
+        </mat-expansion-panel>
+    </mat-accordion>
+
+
+    <mat-divider></mat-divider>
+
+    <h2 matSubheader>Settings</h2>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/">
+        <mat-icon>settings</mat-icon>
+        User preferences
+    </a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/">
+        <mat-icon>account_balance_wallet</mat-icon>
+        Account
+    </a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/">
+        <mat-icon>api</mat-icon>
+        Integration
+    </a>
 
 </mat-nav-list>

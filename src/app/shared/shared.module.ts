@@ -11,6 +11,17 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatListModule } from '@angular/material/list';
 import { RouterModule } from '@angular/router';
+import { MatExpansionModule } from '@angular/material/expansion';
+
+const materialModules = [
+  MatDividerModule,
+  MatToolbarModule,
+  MatIconModule,
+  MatButtonModule,
+  MatMenuModule,
+  MatListModule,
+  MatExpansionModule
+];
 
 @NgModule({
   declarations: [
@@ -20,20 +31,14 @@ import { RouterModule } from '@angular/router';
   ],
   imports: [
     CommonModule,
-    MatDividerModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatButtonModule,
+    RouterModule,
     FlexLayoutModule,
-    MatMenuModule,
-    MatListModule,
-    RouterModule
+    materialModules
   ],
   exports: [
     HeaderComponent,
     FooterComponent,
     SidebarComponent
-
   ]
 })
 export class SharedModule { }
