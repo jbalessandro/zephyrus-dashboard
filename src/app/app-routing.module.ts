@@ -4,6 +4,7 @@ import { DefaultComponent } from './layouts/default/default.component';
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
 import { PostsComponent } from './modules/posts/posts.component';
 import { SegmentsComponent } from './modules/segments/segments.component';
+import { WorkflowNewComponent } from './modules/workflow/workflow-new/workflow-new.component';
 import { WorkflowComponent } from './modules/workflow/workflow.component';
 
 const routes: Routes = [{
@@ -21,6 +22,9 @@ const routes: Routes = [{
   }, {
     path: 'workflow',
     component: WorkflowComponent
+  }, {
+    path: 'workflow-new',
+    component: WorkflowNewComponent
   }]
 }];
 

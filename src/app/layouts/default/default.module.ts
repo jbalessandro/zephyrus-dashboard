@@ -10,7 +10,7 @@ import { MatDividerModule } from '@angular/material/divider';
 import { SegmentsComponent } from 'src/app/modules/segments/segments.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatTableModule } from '@angular/material/table';
-import {MatPaginator} from '@angular/material/paginator';
+import { MatPaginator } from '@angular/material/paginator';
 import { WorkflowComponent } from 'src/app/modules/workflow/workflow.component';
 import { MatIconModule } from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
