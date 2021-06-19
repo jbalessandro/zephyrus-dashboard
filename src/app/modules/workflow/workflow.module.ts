@@ -6,6 +6,10 @@ import { ActionEndComponent } from './actions/action-end/action-end.component';
 import { ActionStartComponent } from './actions/action-start/action-start.component';
 import { ActionTimerComponent } from './actions/action-timer/action-timer.component';
 import { WorkflowNewComponent } from './workflow-new/workflow-new.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatIconModule } from '@angular/material/icon';
+import {MatChipsModule} from '@angular/material/chips';
 
 @NgModule({
   declarations: [
@@ -14,10 +18,14 @@ import { WorkflowNewComponent } from './workflow-new/workflow-new.component';
     ActionEndComponent,
     ActionStartComponent,
     ActionTimerComponent,
-    WorkflowNewComponent
+    WorkflowNewComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatCardModule,
+    MatDividerModule,
+    MatIconModule,
+    MatChipsModule
   ],
   exports: [
     WorkflowNewComponent

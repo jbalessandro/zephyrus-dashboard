@@ -12,6 +12,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatListModule } from '@angular/material/list';
 import { RouterModule } from '@angular/router';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatCardModule } from '@angular/material/card';
 
 const materialModules = [
   MatDividerModule,
@@ -20,7 +21,8 @@ const materialModules = [
   MatButtonModule,
   MatMenuModule,
   MatListModule,
-  MatExpansionModule
+  MatExpansionModule,
+  MatCardModule
 ];
 
 @NgModule({

@@ -13,7 +13,8 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
 import { WorkflowComponent } from 'src/app/modules/workflow/workflow.component';
 import { MatIconModule } from '@angular/material/icon';
-import {MatButtonModule} from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
+import { WorkflowModule } from 'src/app/modules/workflow/workflow.module';
 
 @NgModule({
   declarations: [
@@ -27,12 +28,14 @@ import {MatButtonModule} from '@angular/material/button';
     CommonModule,
     RouterModule,
     SharedModule,
+    WorkflowModule,
     MatSidenavModule,
     MatDividerModule,
     MatCardModule,
     MatTableModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule
   ]
 })
 export class DefaultModule { }

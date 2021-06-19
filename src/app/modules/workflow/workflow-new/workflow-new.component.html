@@ -1,3 +1,22 @@
-<div class="wrap-content">
-    <ng-template #mainTemplate></ng-template>
+<h2>Workflow</h2>
+<h5>Segments</h5>
+<div class="chip-list">
+    <mat-chip-list #chipList aria-label="Fruit selection" class="zoom">
+        <mat-chip *ngFor="let segment of segments" [selectable]="selectable" [removable]="removable"
+            (removed)="remove(segment)">
+            {{segment.name}}
+            <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+        </mat-chip>
+    </mat-chip-list>
+</div>
+<mat-divider></mat-divider>
+
+<div class="zoom">
+    <table class="flow-table">
+        <tr>
+            <td>
+                <ng-template #mainTemplate></ng-template>
+            </td>
+        </tr>
+    </table>
 </div>

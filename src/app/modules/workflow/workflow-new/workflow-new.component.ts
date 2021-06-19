@@ -2,6 +2,9 @@ import { Component, OnInit, ViewContainerRef, AfterContentInit, ViewChild } from
 import { IAction } from 'src/app/shared/models/workflow/action';
 import { IWorkflow } from 'src/app/shared/models/workflow/workflow';
 import { WorkflowServices } from 'src/app/shared/services/workflow.service';
+export interface Segment {
+  name: string;
+}
 
 @Component({
   selector: 'app-workflow-new',
@@ -11,6 +14,15 @@ import { WorkflowServices } from 'src/app/shared/services/workflow.service';
 export class WorkflowNewComponent implements OnInit {
   @ViewChild('mainTemplate', { read: ViewContainerRef, static: true }) formRef: any;
   workFlowData!: IWorkflow;
+
+  visible = true;
+  selectable = true;
+  removable = true;
+  segments: Segment[] = [
+    { name: 'New customers' },
+    { name: 'Premium customers' },
+    { name: 'Prospect customers' }
+  ];
   
   constructor(    
     public viewContainerRef: ViewContainerRef,
@@ -27,7 +39,6 @@ export class WorkflowNewComponent implements OnInit {
 
   getWorkFlow(): void {
     this.workFlowData = this.workflowServices.getWorkFlow();    
-    debugger;
     this.createWorkFlow();
   }
 
@@ -40,4 +51,11 @@ export class WorkflowNewComponent implements OnInit {
     this.workflowServices.createElement(action, this.formRef, this.workFlowData);
   }
 
+  remove(segment: Segment): void {
+    const index = this.segments.indexOf(segment);
+
+    if (index >= 0) {
+      this.segments.splice(index, 1);
+    }
+  }
 }
