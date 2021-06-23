@@ -9,4 +9,21 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	min-width: 2000px;
+	padding-top: 20px;
+}
+
+.line:after {
+	content:"";
+    // position: absolute;
+    z-index: -1;
+	height: 20px;
+    left: 50%;
+    border-left: 2px solid #ccc;
+    transform: translate(-50%);
+}
+
+
+div {
+	margin-top: -5px !important;
 }

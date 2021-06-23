@@ -42,7 +42,7 @@
             "type": "email",
             "parent": 3,
             "next": 6,
-            "description": "Send email to Segment: Prospects",
+            "description": "Send email to Segment: Prospe",
             "conditional": null,
             "details": null
         },
@@ -106,7 +106,7 @@
             "id": 11,
             "type": "email",
             "parent": 9,
-            "next": null,
+            "next": 12,
             "description": "Send email to Segment: Clients",
             "conditional": null,
             "details": null

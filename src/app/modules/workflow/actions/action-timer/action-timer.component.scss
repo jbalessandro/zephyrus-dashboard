@@ -1,13 +1,26 @@
 .action-card {
 	max-width: 200px;
-	min-width: 200px;
+	min-width:200px;
 	align-content: center;
 }
 
 .main-div{
-	margin-top: 15px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 1600px;
+	min-width: 2000px;
+}
+
+.line:after {
+	content:"";
+    // position: absolute;
+    z-index: -1;
+	height: 20px;
+    left: 50%;
+    border-left: 2px solid #ccc;
+    transform: translate(-50%);
+}
+
+div {
+	margin-top: -5px !important;
 }

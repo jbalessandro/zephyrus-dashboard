@@ -5,8 +5,12 @@
 }
 
 .main-div{
-	margin-top: 15px;
+	margin-top: 0px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+div {
+	margin-top: -5px !important;
 }

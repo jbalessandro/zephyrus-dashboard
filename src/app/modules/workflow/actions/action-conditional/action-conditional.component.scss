@@ -1,5 +1,5 @@
 td {
-  width: 50%;
+  width: 50% !important;
 }
 
 .action-card {
@@ -12,4 +12,47 @@ td {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.line-top-right {
+	height: 0px;
+	border-top: 2px solid #ccc;
+	width: 50%;
+}
+
+.line-top-left {
+	height: 0px;
+	border-top: 2px solid #ccc;
+	width: 50%;
+	margin-left: 50%;
+}
+
+.line:after {
+	content:"";
+    //position: absolute;
+    z-index: -1;
+	height: 20px;
+    //left: 50%;
+    border-left: 2px solid #ccc;
+    transform: translate(-50%);
+}
+
+.yes {
+	padding-right: 60%;
+	position: relative;
+	top: -5px;
+}
+
+.no {
+	padding-left: 60%;
+	position: relative;
+	top: -5px;
+}
+
+div {
+	margin-top: -5px !important;
+}
+
+div .line-top-left {
+	margin-left: -5px !important;
 }
